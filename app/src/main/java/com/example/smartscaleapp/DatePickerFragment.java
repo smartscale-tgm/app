@@ -1,15 +1,24 @@
 package com.example.smartscaleapp;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
+import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 
 import java.util.Calendar;
 
+@SuppressLint("ValidFragment")
 public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+
+    private RegisterActivity registerActivity;
+
+    public DatePickerFragment(RegisterActivity registerActivity) {
+        this.registerActivity = registerActivity;
+    }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -24,7 +33,8 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
     }
 
     public void onDateSet(DatePicker view, int year, int month, int day) {
-
+        Button button = registerActivity.findViewById(R.id.birthday_register);
+        button.setText(day + "-" + month + "-" + year);
     }
 
 }
