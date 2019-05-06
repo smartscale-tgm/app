@@ -22,4 +22,19 @@
         android:layout_height="wrap_content"
         android:hint="@string/firstname"/>
 
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/nachname_register"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastname"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/mail_register"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/mail"/>
+
 </LinearLayout>
