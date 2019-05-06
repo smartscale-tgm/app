@@ -54,7 +54,8 @@
         android:hint="@string/password_repeat"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/birthday_register"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/birthday"
         android:onClick="showDatePickerDialog" />
