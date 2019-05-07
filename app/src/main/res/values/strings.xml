@@ -9,4 +9,8 @@
     <string name="mail">Email</string>
     <string name="password_repeat">Passwort wiederholen</string>
     <string name="birthday">Geburtstag</string>
+    <string name="target_weigth">65kg</string>
+    <string name="target_steps">20000 Schritte</string>
+    <string name="progress">Fortschritt</string>
+    <string name="bmi">Dein BMI: 20 (Ideal)</string>
 </resources>
